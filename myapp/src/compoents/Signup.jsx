@@ -9,7 +9,7 @@ const Signup = () => {
   const [pass, setPass] = useState('')
   const [email1, setEmail1] = useState('')
   const [pass1, setPass1] = useState('')
-  const [islogging, setisloggin] = useState(false)
+  const [islogging, setisloggin] = useState(true)
 
   const handlRegister = () => {
     if (email === '' || pass === '' || email === '') {

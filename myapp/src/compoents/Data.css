@@ -1,70 +1,112 @@
-.data_container{
-    height: auto;
-    width: 90vw;
-    margin: 5vh 5vw;
-    
-    clear: both;
+.data_container {
+  height: auto;
+  width: 90vw;
+  margin: 5vh 5vw;
+
+  clear: both;
 }
-.data_card{
-    height: 30vh;
-    width: 20vw;
-    box-shadow: 1px 2px 1px 2px black;
-    background-color: lightgray;
-    margin:2.5vh 2.5vw;
+.data_card {
+  height: 30vh;
+  width: 20vw;
+  box-shadow: 1px 2px 1px 2px black;
+  background-color: lightgray;
+  margin: 2.5vh 2.5vw;
+  float: left;
+  padding: 30px;
+}
+.data_card:hover {
+  background-color: orangered;
+  color: black;
+}
+.crashdate {
+  font-size: 18px;
+  font-weight: bold;
+}
+.crashTime {
+  font-size: 18px;
+  font-weight: bold;
+}
+.vehicle1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.vehicle2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.indiviualData {
+  text-decoration: none;
+  color: black;
+}
+.paginationBtn {
+  width: 90%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.paginationBtn a:hover {
+  background-color: black;
+  color: #fff;
+}
+.paginationBtn a {
+  padding: 8px;
+  margin: 100px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  background-color: #fff;
+}
+.paginationActive a {
+  background-color: black;
+  color: #fff;
+}
+
+.filter_div {
+  height: 100px;
+  width: 90vw;
+  display: flex;
+}
+.date_div {
+  float: left;
+  height: 100px;
+  width: 25%;
+  padding: 30px 50px;
+}
+.date_div > label {
+  font-size: 1.3rem;
+}
+.date_div > input {
+  font-size: 1.3rem;
+}
+.vehical_div1 {
+  float: left;
+  height: 100px;
+  width: 25%;
+  width: 50%;
+  padding: 30px 200px;
+}
+.vehical_div1 > label {
+  font-size: 1.3rem;
+}
+.vehical_div1 > select {
+  font-size: 1.3rem;
+  background-color: lightblue;
+  color: black;
+}
+.vehical_div2 {
     float: left;
-    padding: 30px;
-    
-
-}
-.data_card:hover{
-    background-color: orangered;
-    color: black;
-}
-.crashdate{
-    font-size: 18px;
-    font-weight: bold;
-}
-.crashTime{
-    font-size: 18px;
-    font-weight: bold;
-}
-.vehicle1{
-    
-    font-size: 18px;
-    font-weight: bold;
-}
-.vehicle2{
-    font-size: 18px;
-    font-weight: bold;
-}
-.indiviualData{
-    text-decoration: none;
-    color: black;
-}
-.paginationBtn{
-    width: 90%;
-    height: 40px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-.paginationBtn a:hover{
-    background-color: black;
-    color: #fff;
-}
-.paginationBtn a{
-    padding: 8px;
-    margin: 100px 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: black;
-    cursor: pointer;
-    background-color:#fff;
-    
-}
-.paginationActive a{
-    background-color: black;
-    color: #fff;
-}
-
+    height: 100px;
+    width: 30%;
+    padding: 30px 80px;
+  }
+  .vehical_div2 > label {
+    font-size: 1.3rem;
+  }
+  .vehical_div2 > select {
+    font-size: 1.3rem;
+    background-color:lightblue;
+    color:black;
+  }
