@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Data from './Data'
-import  ReactPaginate  from 'react-paginate'
+import ReactPaginate from 'react-paginate'
 
 const Home = () => {
   var [newdata, setnewdata] = useState([])
@@ -33,24 +33,36 @@ const Home = () => {
 
   const pageCount = Math.ceil(newdata.length / userperpage)
 
-  const changePage=({selected})=>{
-     setPageNumber(selected)
+  const changePage = ({ selected }) => {
+    setPageNumber(selected)
   }
   return (
     <div>
       <div className='data_container'>
+        <div className='filter_div'>
+          <div className='date_div'>
+            <label htmlFor=''>Filter date</label> <input type='date' />
+          </div>
+          <div className='vechical_div'>
+            filter
+            <select>
+              <option value='vehical1'>vehical type 1</option>
+              <option value='vehical2'>vehical type 2</option>
+            </select>
+          </div>
+        </div>
         {displayuser}
-      
+
         <ReactPaginate
           previousLabel={'Previous'}
           nextLabel={'Next'}
           pageCount={pageCount}
           onPageChange={changePage}
-          containerClassName={"paginationBtn"}
-          previousLinkClassName={"previosBtn"}
-          nextLinkClassName={"nextBtn"}
-          disabledClassName={"paginationDis"}
-          activeClassName={"paginationActive"}
+          containerClassName={'paginationBtn'}
+          previousLinkClassName={'previosBtn'}
+          nextLinkClassName={'nextBtn'}
+          disabledClassName={'paginationDis'}
+          activeClassName={'paginationActive'}
         />
       </div>
     </div>
