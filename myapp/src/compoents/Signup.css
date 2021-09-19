@@ -1,0 +1,74 @@
+
+  .signup {
+    height: 80vh;
+    width: 80vw;
+    background-color: lightgray;
+    margin: 5vh 10vw;
+    align-items: center;
+    box-shadow: 0px 1px 3px 2px black;
+    border-radius: 8%;
+    color: #fff;
+  }
+  
+  .register {
+    height: 80%;
+    width: 40%;
+    margin: 5% 4%;
+    border: 1px solid black;
+    float: left;
+    background-color: black;
+  }
+  .login {
+    height: 80%;
+    width: 40%;
+    margin: 5% 4%;
+    border: 1px solid black;
+    float: right;
+    background-color: black;
+  }
+  .register_box {
+    height: 60%;
+    width: 50%;
+    margin: 2% 20%;
+    display: inline-grid;
+  }
+  
+  .register_box > input {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .register_box > label {
+    font-size: 1.3rem;
+  }
+  .register_box > button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .login_box {
+    height: 70%;
+    width: 50%;
+    margin: 5% 20%;
+    display: inline-grid;
+  }
+  
+  .login_box > input {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .login_box > label {
+    font-size: 1.3rem;
+  }
+  .login_box > button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
