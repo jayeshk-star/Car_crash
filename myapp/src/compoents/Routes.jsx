@@ -5,7 +5,7 @@ import Contact from './Contact'
 import Home from './Home'
 import About from './About'
 import Signup from './Signup'
-import Singledata from './Singledata';
+import Singledata from './Singledata'
 
 const Routes = () => {
   return (
@@ -15,7 +15,7 @@ const Routes = () => {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/:id'>
+        <Route path='/:id'>
           <Singledata />
         </Route>
         <Route exact path='/contact'>

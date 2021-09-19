@@ -2,7 +2,8 @@
     height: auto;
     width: 90vw;
     margin: 5vh 5vw;
-    background-color: purple;
+    
+    clear: both;
 }
 .data_card{
     height: 30vh;
@@ -12,6 +13,7 @@
     margin:2.5vh 2.5vw;
     float: left;
     padding: 30px;
+    
 
 }
 .data_card:hover{
@@ -39,3 +41,30 @@
     text-decoration: none;
     color: black;
 }
+.paginationBtn{
+    width: 90%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.paginationBtn a:hover{
+    background-color: black;
+    color: #fff;
+}
+.paginationBtn a{
+    padding: 8px;
+    margin: 100px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    background-color:#fff;
+    
+}
+.paginationActive a{
+    background-color: black;
+    color: #fff;
+}
+
